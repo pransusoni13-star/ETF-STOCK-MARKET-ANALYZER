@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #cbd5e1;
+}
+
+
+.search-section {
+    text-align: center;
+    margin: 30px;
+}
+
+.search-box {
+    margin-top: 20px;
+}
+
+input {
+    padding: 12px;
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+}
+
+
+button {
+    padding: 12px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background: #1d4ed8;
+}
+
+
+.dashboard {
+    width: 90%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 20px;
+}
+
+
+.card {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+
+.card i {
+    font-size: 35px;
+    color: #38bdf8;
+}
+
+
+.card h3 {
+    margin: 15px 0;
+}
+
+
+.card p {
+    color: #22c55e;
+    font-size: 20px;
+}
+
+
+.analysis {
+    width: 90%;
+    margin: auto;
+}
+
+
+.analysis h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.analysis-box {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+
+.analysis-box p {
+    color: #cbd5e1;
+}
+
+
+.analysis-box ul {
+    margin-top: 20px;
+    list-style: none;
+}
+
+
+.analysis-box li {
+    padding: 8px;
+}
+
+
+.chart-section {
+    width: 90%;
+    margin: 50px auto;
+}
+
+
+.chart-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+canvas {
+    background: #1e293b;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+
+.etf-list {
+    text-align: center;
+    margin: 40px;
+}
+
+
+.etf-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+.etf-buttons button {
+    background: #334155;
+}
+
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #94a3b8;
+}
+
+
+@media(max-width:600px){
+
+input {
+    width:90%;
+}
+
+button {
+    margin-top:10px;
+}
+
+header h1 {
+    font-size:30px;
+}
+
+}

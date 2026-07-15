@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ETF Stock Market Analyzer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <h1>📈 ETF Stock Market Analyzer</h1>
+
+    <p>
+        Analyze popular ETFs and understand investment performance.
+    </p>
+
+</header>
+
+
+
+<section class="search-section">
+
+    <h2>Search ETF</h2>
+
+
+    <div class="search-box">
+
+        <input 
+        type="text"
+        id="etfSearch"
+        placeholder="Enter ETF name">
+
+
+        <button onclick="analyzeETF()">
+            Analyze
+        </button>
+
+    </div>
+
+
+</section>
+
+
+
+
+<section class="dashboard">
+
+
+<div class="card">
+
+<i class='bx bx-line-chart'></i>
+
+<h3>ETF Name</h3>
+
+<p id="etfName">
+-
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<i class='bx bx-dollar'></i>
+
+<h3>Price</h3>
+
+<p id="price">
+-
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<i class='bx bx-trending-up'></i>
+
+<h3>Daily Change</h3>
+
+<p id="change">
+-
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<i class='bx bx-wallet'></i>
+
+<h3>Dividend Yield</h3>
+
+<p id="dividend">
+-
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<i class='bx bx-shield'></i>
+
+<h3>Risk Level</h3>
+
+<p id="risk">
+-
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<i class='bx bx-category'></i>
+
+<h3>Category</h3>
+
+<p id="category">
+-
+</p>
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+<section class="analysis">
+
+
+<h2>
+Investment Analysis
+</h2>
+
+
+
+<div class="analysis-box">
+
+
+<p id="description">
+
+Search an ETF to view information.
+
+</p>
+
+
+
+<ul>
+
+
+<li>
+52 Week High:
+<span id="high">-</span>
+</li>
+
+
+<li>
+52 Week Low:
+<span id="low">-</span>
+</li>
+
+
+<li>
+Market:
+<span id="market">-</span>
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section class="chart-section">
+
+
+<h2>
+ETF Performance Chart
+</h2>
+
+
+<canvas id="etfChart"></canvas>
+
+
+</section>
+
+
+
+
+
+
+
+<section class="etf-list">
+
+
+<h2>
+Popular ETFs
+</h2>
+
+
+
+<div class="etf-buttons">
+
+
+<button onclick="loadETF('VFV')">
+VFV
+</button>
+
+
+<button onclick="loadETF('VEQT')">
+VEQT
+</button>
+
+
+<button onclick="loadETF('XEQT')">
+XEQT
+</button>
+
+
+<button onclick="loadETF('VOO')">
+VOO
+</button>
+
+
+<button onclick="loadETF('SPY')">
+SPY
+</button>
+
+
+<button onclick="loadETF('QQQ')">
+QQQ
+</button>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<footer>
+
+<p>
+Built with HTML, CSS, JavaScript and Chart.js
+</p>
+
+
+<p>
+ETF Stock Market Analyzer | Pransu Soni
+</p>
+
+
+</footer>
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
